@@ -3,21 +3,32 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'Евгений Орлов'
-SITENAME = u'Евгений Орлов'
+SITENAME = u'______'
 SITESUBTITLE = u'Персональный блог об анализе данных'
 SITEURL = 'http://localhost:8000'
 
 # Path to theme
 THEME = "pelican-bootstrap3"
 
+# Bootstrap theme: http://bootswatch.com/
+BOOTSTRAP_THEME = 'flatly2'
+BOOTSTRAP_NAVBAR_INVERSE = False
+
 PATH = 'content'
 DELETE_OUTPUT_DIRECTORY = False
 
 TIMEZONE = 'Europe/Moscow'
 
-LOCALE = 'ru_RU.UTF-8'
+LOCALE = ('rus', 'usa',  # On Windows
+	'ru_RU.utf8', 'en_US.utf8',  # On Unix/Linux
+)  # Locale which goes first is applied
 DEFAULT_LANG = u'ru'
 
+
+DATE_FORMATS = {
+    'en': '%B %d, %Y',
+    'ru': '%d.%m.%Y',
+}
 DEFAULT_DATE_FORMAT = '%d %B %Y'
 DEFAULT_DATE = 'fs'
 
@@ -74,20 +85,18 @@ SOCIAL = None
 # Tags
 DISPLAY_TAGS_ON_SIDEBAR = True
 DISPLAY_TAGS_INLINE = True
+TAG_CLOUD_STEPS = 3
 TAG_CLOUD_MAX_ITEMS = 10
 
 # Categories
 #DISPLAY_CATEGORIES_ON_SIDEBAR = False
+#REVERSE_CATEGORY_ORDER = False
 
 # Recent posts
 #DISPLAY_RECENT_POSTS_ON_SIDEBAR = False
 #RECENT_POST_COUNT = 5
 
 #HIDE_SIDEBAR = False
-
-# Bootstrap theme: http://bootswatch.com/
-BOOTSTRAP_THEME = 'flatly'
-BOOTSTRAP_NAVBAR_INVERSE = False
 
 # License
 CC_LICENSE = "CC-BY"
