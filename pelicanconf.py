@@ -15,7 +15,22 @@ DELETE_OUTPUT_DIRECTORY = False
 
 TIMEZONE = 'Europe/Moscow'
 
+LOCALE = 'ru_RU.UTF-8'
 DEFAULT_LANG = u'ru'
+
+DEFAULT_DATE_FORMAT = '%d %B %Y'
+DEFAULT_DATE = 'fs'
+
+
+NEWEST_FIRST_ARCHIVES = True
+
+ARTICLE_URL = '{category}/{slug}/'
+ARTICLE_SAVE_AS = '{category}/{slug}/index.html'
+PAGE_URL = '{slug}.html'
+PAGE_SAVE_AS = '{slug}.html'
+TAG_URL = 'tags/{slug}.html'
+TAG_SAVE_AS = 'tags/{slug}.html'
+TAGS_URL = 'tags.html'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -24,9 +39,9 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-SITELOGO = 'images/logo.png'
+SITELOGO = 'extra/logo.png'
 SITELOGO_SIZE = 32
-FAVICON = 'images/favicon.png'
+FAVICON = 'extra/favicon.png'
 
 # Disqus comments plugin
 DISQUS_SITENAME = 'eorlov'
@@ -35,6 +50,8 @@ DISQUS_DISPLAY_COUNTS = False
 
 DEFAULT_PAGINATION = 5
 
+#DISPLAY_BREADCRUMBS = False
+#DISPLAY_CATEGORY_IN_BREADCRUMBS = True
 
 # Recently active GitHub repos in the sidebar
 GITHUB_USER = 'evgenyorlov'
@@ -56,6 +73,7 @@ SOCIAL = None
 
 # Tags
 DISPLAY_TAGS_ON_SIDEBAR = True
+DISPLAY_TAGS_INLINE = True
 TAG_CLOUD_MAX_ITEMS = 10
 
 # Categories
@@ -77,3 +95,10 @@ CC_LICENSE = "CC-BY"
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
+STATIC_PATHS = ['extra/robots.txt','extra/CNAME','images','extra/favicon.png', 'extra/logo.png', ]
+
+EXTRA_PATH_METADATA = {
+    'extra/robots.txt': {'path': 'robots.txt'},
+    'extra/favicon.png': {'path': 'favicon.png'},
+    'extra/CNAME': {'path': 'CNAME'},
+}

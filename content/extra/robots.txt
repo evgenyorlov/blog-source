@@ -1,0 +1,7 @@
+User-agent: Yandex
+Disallow: /content/
+
+User-agent: *
+Disallow: /content/
+Sitemap: http://eorlov.com/sitemap.xml
+Host: eorlov.com
