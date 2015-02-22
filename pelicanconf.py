@@ -7,9 +7,11 @@ SITENAME = u'Евгений Орлов'
 SITESUBTITLE = u'Персональный блог об анализе данных'
 SITEURL = 'http://localhost:8000'
 
+# Path to theme
+THEME = "pelican-bootstrap3"
+
 PATH = 'content'
 DELETE_OUTPUT_DIRECTORY = False
-
 
 TIMEZONE = 'Europe/Moscow'
 
@@ -22,8 +24,16 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+SITELOGO = 'images/logo.png'
+SITELOGO_SIZE = 32
+FAVICON = 'images/favicon.png'
 
-DEFAULT_PAGINATION = 10
+# Disqus comments plugin
+DISQUS_SITENAME = 'eorlov'
+DISQUS_SHORTNAME = 'eo'
+DISQUS_DISPLAY_COUNTS = False
+
+DEFAULT_PAGINATION = 5
 
 
 # Recently active GitHub repos in the sidebar
@@ -66,7 +76,4 @@ CC_LICENSE = "CC-BY"
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
-
-# Theme variable
-THEME = "."
 
