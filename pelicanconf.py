@@ -39,9 +39,9 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-SITELOGO = 'extra/logo.png'
+SITELOGO = 'images/logo.png'
 SITELOGO_SIZE = 32
-FAVICON = 'extra/favicon.png'
+FAVICON = 'images/favicon.png'
 
 # Disqus comments plugin
 DISQUS_SITENAME = 'eorlov'
@@ -95,10 +95,10 @@ CC_LICENSE = "CC-BY"
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-STATIC_PATHS = ['extra/robots.txt','extra/CNAME','images','extra/favicon.png', 'extra/logo.png', ]
+STATIC_PATHS = ['extra/robots.txt','extra/CNAME','images', ]
 
-EXTRA_PATH_METADATA = {
-    'extra/robots.txt': {'path': 'robots.txt'},
-    'extra/favicon.png': {'path': 'favicon.png'},
-    'extra/CNAME': {'path': 'CNAME'},
-}
+#EXTRA_PATH_METADATA = {
+#    'extra/robots.txt': {'path': 'robots.txt'},
+#    'extra/favicon.png': {'path': 'favicon.png'},
+#    'extra/CNAME': {'path': 'CNAME'},
+#}
