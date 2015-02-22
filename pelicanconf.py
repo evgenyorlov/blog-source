@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'Евгений Орлов'
-SITENAME = u'______'
+SITENAME = u'Евгений Орлов'
 SITESUBTITLE = u'Персональный блог об анализе данных'
 SITEURL = 'http://localhost:8000'
 
@@ -11,7 +11,7 @@ SITEURL = 'http://localhost:8000'
 THEME = "pelican-bootstrap3"
 
 # Bootstrap theme: http://bootswatch.com/
-BOOTSTRAP_THEME = 'flatly2'
+BOOTSTRAP_THEME = 'flatly3'
 BOOTSTRAP_NAVBAR_INVERSE = False
 
 PATH = 'content'
@@ -29,7 +29,7 @@ DATE_FORMATS = {
     'en': '%B %d, %Y',
     'ru': '%d.%m.%Y',
 }
-DEFAULT_DATE_FORMAT = '%d %B %Y'
+DEFAULT_DATE_FORMAT = '%d.%m.%Y'
 DEFAULT_DATE = 'fs'
 
 
