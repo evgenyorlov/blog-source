@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'Евгений Орлов'
-SITENAME = u'Евгений Орлов'
+SITENAME = u'В разработке...'
 SITESUBTITLE = u'Персональный блог об анализе данных'
 SITEURL = 'http://localhost:8000'
 
@@ -11,7 +11,7 @@ SITEURL = 'http://localhost:8000'
 THEME = "pelican-bootstrap3"
 
 # Bootstrap theme: http://bootswatch.com/
-BOOTSTRAP_THEME = 'flatly3'
+BOOTSTRAP_THEME = 'flatly2'
 BOOTSTRAP_NAVBAR_INVERSE = False
 
 # Pygments theme
@@ -109,15 +109,37 @@ CC_LICENSE = "CC-BY"
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-STATIC_PATHS = ['extra/robots.txt','extra/CNAME','images', ]
+STATIC_PATHS = ['extra/robots.txt','extra/CNAME', 'images', ]
 
-#EXTRA_PATH_METADATA = {
-#    'extra/robots.txt': {'path': 'robots.txt'},
-#    'extra/favicon.png': {'path': 'favicon.png'},
-#    'extra/CNAME': {'path': 'CNAME'},
-#}
+EXTRA_PATH_METADATA = {
+    'extra/robots.txt': {'path': 'robots.txt'},
+    'extra/CNAME': {'path': 'CNAME'},
+}
 
 # Article list parameters
 DISPLAY_ARTICLE_INFO_ON_INDEX = True
 DISPLAY_TEASER_IMAGES = True
 SHOW_ARTICLE_CATEGORY = False
+
+#### Plugins ####
+PLUGIN_PATHS = ["pelican-plugins", ]
+PLUGINS = ["sitemap", ]
+# Sitemap
+SITEMAP = {
+    'format': 'xml',
+    'priorities': {
+        '{category}': 0.5,
+        'indexes': 0.5,
+        'pages': 0.5
+    },
+    'changefreqs': {
+        '{category}': 'always',
+        'indexes': 'hourly',
+        'pages': 'monthly'
+    }
+}
+
+#### Google Analytics ####
+GOOGLE_ANALYTICS = 'UA-60053622-1'
+GOOGLE_ANALYTICS_DOMAIN = 'http://eorlov.com/'
+
