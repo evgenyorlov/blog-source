@@ -97,14 +97,17 @@
 <div class="navbar {% if BOOTSTRAP_NAVBAR_INVERSE %}navbar-inverse{% else %}navbar-default{% endif %} navbar-fixed-top" role="navigation">
 	<div class="container{% if BOOTSTRAP_FLUID %}-fluid{% endif %}">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" 
+                    data-target=".navbar-ex1-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="{{ SITEURL }}/" class="navbar-brand">
-                {% if SITELOGO %}<img src="{{ SITEURL }}/{{ SITELOGO }}" width="{{ SITELOGO_SIZE }}"/> {% endif %}
+            {% if SITELOGO %}<a href="{{ SITEURL }}/" class="pull-left"><img src="{{ SITEURL }}/{{ SITELOGO }}"
+                style="max-width:100px; margin-top: 12px; margin-right: 4px;" 
+                width="{{ SITELOGO_SIZE }}"/></a> {% endif %}
+            <a class="navbar-brand" rel="home" style="margin-top: -1px;" href="{{ SITEURL }}/" title="{{ SITENAME }}">
                 {% if not HIDE_SITENAME %}{{ SITENAME }}{% endif %}
             </a>
         </div>
