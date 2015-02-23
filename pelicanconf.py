@@ -14,6 +14,9 @@ THEME = "pelican-bootstrap3"
 BOOTSTRAP_THEME = 'flatly3'
 BOOTSTRAP_NAVBAR_INVERSE = False
 
+# Pygments theme
+PYGMENTS_STYLE = 'monokai'  # monokai zenburn manni
+
 PATH = 'content'
 DELETE_OUTPUT_DIRECTORY = False
 
@@ -53,11 +56,12 @@ AUTHOR_FEED_RSS = None
 SITELOGO = 'images/logo.png'
 SITELOGO_SIZE = 32
 FAVICON = 'images/favicon.png'
+SITETEASER = 'images/teaser.png'
 
 # Disqus comments plugin
 DISQUS_SITENAME = 'eorlov'
 DISQUS_SHORTNAME = 'eo'
-DISQUS_DISPLAY_COUNTS = False
+DISQUS_DISPLAY_COUNTS = True
 
 DEFAULT_PAGINATION = 5
 
@@ -65,6 +69,7 @@ DEFAULT_PAGINATION = 5
 #DISPLAY_CATEGORY_IN_BREADCRUMBS = True
 
 # Recently active GitHub repos in the sidebar
+GITHUB_URL = 'https://github.com/evgenyorlov'
 GITHUB_USER = 'evgenyorlov'
 GITHUB_REPO_COUNT = 3
 GITHUB_SKIP_FORK = True
@@ -111,3 +116,8 @@ STATIC_PATHS = ['extra/robots.txt','extra/CNAME','images', ]
 #    'extra/favicon.png': {'path': 'favicon.png'},
 #    'extra/CNAME': {'path': 'CNAME'},
 #}
+
+# Article list parameters
+DISPLAY_ARTICLE_INFO_ON_INDEX = True
+DISPLAY_TEASER_IMAGES = True
+SHOW_ARTICLE_CATEGORY = False
