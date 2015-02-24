@@ -104,11 +104,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            {% if SITELOGO %}<a href="{{ SITEURL }}/" class="pull-left"><img src="{{ SITEURL }}/{{ SITELOGO }}"
-                style="max-width:64px; margin-top: 13px; margin-right: 3px; margin-left: 3px" 
-                width="{{ SITELOGO_SIZE }}"/></a> {% endif %}
-            <a class="navbar-brand" rel="home" style="margin-top: -1px;" href="{{ SITEURL }}/" title="{{ SITENAME }}">
+            <a class="navbar-brand" rel="home" href="{{ SITEURL }}/" title="{{ SITENAME }}">
+                <div class="row" style="margin-top: -5px;">
+                {% if SITELOGO %} <img src="{{ SITEURL }}/{{ SITELOGO }}" style="max-width:64px;" 
+                    width="{{ SITELOGO_SIZE }}"/> {% endif %}
                 {% if not HIDE_SITENAME %}{{ SITENAME }}{% endif %}
+                </div>
             </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">

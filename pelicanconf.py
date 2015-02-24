@@ -15,7 +15,7 @@ BOOTSTRAP_THEME = 'flatly2'
 BOOTSTRAP_NAVBAR_INVERSE = False
 
 # Pygments theme
-PYGMENTS_STYLE = 'monokai'  # monokai zenburn manni
+PYGMENTS_STYLE = 'zenburn'  # monokai zenburn manni
 
 PATH = 'content'
 DELETE_OUTPUT_DIRECTORY = False
@@ -63,7 +63,7 @@ DISQUS_SITENAME = 'eorlov'
 DISQUS_SHORTNAME = 'eo'
 DISQUS_DISPLAY_COUNTS = True
 
-DEFAULT_PAGINATION = 5
+DEFAULT_PAGINATION = 4
 
 #DISPLAY_BREADCRUMBS = False
 #DISPLAY_CATEGORY_IN_BREADCRUMBS = True
