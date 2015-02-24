@@ -123,7 +123,7 @@ SHOW_ARTICLE_CATEGORY = False
 
 #### Plugins ####
 PLUGIN_PATHS = ["pelican-plugins", ]
-PLUGINS = ["sitemap", ]
+PLUGINS = ["sitemap", "summary", ]
 # Sitemap
 SITEMAP = {
     'format': 'xml',

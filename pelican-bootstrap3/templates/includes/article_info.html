@@ -5,8 +5,7 @@
     </span>
     {% if SHOW_DATE_MODIFIED %}
         {% if article.modified %}
-            &nbsp; 
-            <span class="label label-default">Modified</span>
+            <span class="label label-default" style="padding-left: 3px">Modified</span>
             <span class="modified">
                 <i class="fa fa-calendar"></i><time datetime="{{ article.modified.isoformat() }}"> {{ article.locale_modified }}</time>
             </span>
@@ -14,21 +13,18 @@
     {% endif %}
     {% if SHOW_ARTICLE_AUTHOR %}
         {% if article.author %}
-            &nbsp;
-            <span class="label label-default">By</span>
+            <span class="label label-default" style="padding-left: 3px">By</span>
             <a href="{{ SITEURL }}/{{ article.author.url }}"><i class="fa fa-user"></i> {{ article.author }}</a>
         {% endif %}
     {% endif %}
 
     {% if SHOW_ARTICLE_CATEGORY %}
-        &nbsp;
-        <span class="label label-default">Category</span>
+        <span class="label label-default" style="padding-left: 3px">Category</span>
         <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
     {% endif %}
 
     {% if PDF_PROCESSOR %}
-        &nbsp;
-        <span class="label label-default">
+        <span class="label label-default" style="padding-left: 3px">
             <a href="{{ SITEURL }}/pdf/{{ article.slug }}.pdf">PDF</a>
         </span>
     {% endif %}
