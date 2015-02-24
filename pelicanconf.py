@@ -123,7 +123,7 @@ SHOW_ARTICLE_CATEGORY = False
 
 #### Plugins ####
 PLUGIN_PATHS = ["pelican-plugins", ]
-PLUGINS = ["sitemap", "summary", ]
+PLUGINS = ["sitemap", "summary", "related_posts"]
 # Sitemap
 SITEMAP = {
     'format': 'xml',
@@ -138,8 +138,17 @@ SITEMAP = {
         'pages': 'monthly'
     }
 }
+# Related posts
+RELATED_POSTS_MAX = 5
 
 #### Google Analytics ####
 GOOGLE_ANALYTICS = 'UA-60053622-1'
 GOOGLE_ANALYTICS_DOMAIN = 'http://eorlov.com/'
 
+SHARIFF = True
+#SHARIFF_BACKEND_URL (see Shariff Backends)
+SHARIFF_LANG = "en"
+SHARIFF_ORIENTATION = "horizontal"
+#SHARIFF_SERVICES = [&quot;facebook&quot;,&quot;googleplus&quot;]
+SHARIFF_THEME = "grey"
+SHARIFF_TWITTER_VIA = False  # uses TWITTER_USERNAME)
